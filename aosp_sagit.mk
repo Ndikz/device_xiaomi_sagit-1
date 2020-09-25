@@ -30,6 +30,9 @@ $(call inherit-product-if-exists, vendor/apps/GooglePinYin/config.mk)
 # MiuiCamera
 $(call inherit-product-if-exists, vendor/apps/MiuiCamera/config.mk)
 
+# FaceUnlock
+$(call inherit-product-if-exists, vendor/apps/FaceUnlock/config.mk)
+
 PRODUCT_NAME := aosp_sagit
 PRODUCT_DEVICE := sagit
 PRODUCT_BRAND := Xiaomi
