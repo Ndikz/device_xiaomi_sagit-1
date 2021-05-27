@@ -21,23 +21,20 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from sagit device
 $(call inherit-product, device/xiaomi/sagit/device.mk)
 
-# Inherit some common AOSP stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common HAVOC OS stuff.
+$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
 
-# FaceUnlock
-$(call inherit-product-if-exists, vendor/apps/FaceUnlock/config.mk)
+# MiuiCamera
+$(call inherit-product-if-exists, vendor/apps/MiuiCamera/config.mk)
 
-# GMS
-$(call inherit-product-if-exists, vendor/gapps/gapps.mk)
-$(call inherit-product-if-exists, vendor/pixelstyle/config.mk)
-$(call inherit-product-if-exists, vendor/apps/GoogleCamera/config.mk)
-
-PRODUCT_NAME := aosp_sagit_gms
+# Device identifier. This must come after all inclusions.
+PRODUCT_NAME := havoc_sagit
 PRODUCT_DEVICE := sagit
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 6
 PRODUCT_MANUFACTURER := Xiaomi
 TARGET_FACE_UNLOCK := true
+HAVOC_MAINTAINER := Andika Pramana
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
