@@ -1,2 +1,2 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/havoc_sagit.mk
+    $(LOCAL_DIR)/octavi_sagit.mk
